@@ -9,12 +9,12 @@
     text-decoration: none;
 }
 
-:root {
-    --red:#d63a25;
-    --green:#5dfa14;
+:root {    
+    --green: #88F63F;
     --white:#fff;
     --dark: #1e1c2a;
-    --purple: #a61df5;
+    /*--purple: #a61df5*/;
+    --guava: #FD6C69;
 }
 
 body {
@@ -29,13 +29,13 @@ body {
     padding: 18px 40px;
     box-shadow: 0 0.1rem 0.5rem #ccc;
     width: 100%;
-    background: var(--white);
+    background: var(--dark);
     transform: all 0.5s;
     position: fixed;
 }
 
 .navigation .logo {
-    color: var(--green);
+    color: var(--guava);
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -51,14 +51,14 @@ body {
 }
 
 .navigation ul li a {
-    color: var(--dark);
+    color: var(--white);
     font-size: 17px;
     font-weight: 500;
     transition: all 0.5s;
 }
 
 .navigation ul li a:hover {
-    color: var(--red);
+    color: var(--guava);
 }
 
 .navigation i {
@@ -75,15 +75,12 @@ body {
     width: 28px;
     height: 3px;
     border-radius: 3px;
-    background: var(--dark);
+    background: var(--white);
     margin: 5px auto;
     transition: all 0.3s;
 }
 
-.menu .bar:nth-child(1),
-.menu .bar:nth-child(3) {
-    background: var(--red);
-}
+
 
 .home {
     width: 100%;
@@ -98,16 +95,16 @@ body {
     max-width: 37rem;
 }
 
-.home-text .text-h4 {
-    font-size: 1.5rem;
-    color: var(--green);
-    margin-bottom: 1rem;
-}
-
 .home-text .text-h1 {
     font-size: 2.5rem;
+    color: var(--green);
+    margin-bottom: 1rem;      
+}
+
+.home-text .text-h4 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
-    line-height: 2.5rem;
+    line-height: 1.5rem;       
 }
 
 .home-text p {
@@ -116,15 +113,15 @@ body {
 
 .home-btn {
     padding: 15px 45px;
-    background: var(--red);
-    color: var(--white);
+    background: var(--guava);
+    color: var(--dark);
     border-radius: 10px;
     font-weight: 700;
     transition: all 0.5s;
 }
 
 .home-btn:hover {
-    background: #fc4c35;
+    background: #f5a69b;
 }
 
 .home-img {
